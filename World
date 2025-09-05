@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samir Coin Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+    .coin-box { font-size: 24px; margin: 20px; }
+    button { padding: 10px 20px; font-size: 18px; cursor: pointer; }
+    .links { margin-top: 30px; }
+    .links a { display: block; margin: 10px; font-size: 18px; text-decoration: none; color: blue; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Samir Coin Demo</h1>
+  <div class="coin-box">
+    Your Coins: <span id="coins">0</span>
+  </div>
+  <button onclick="addCoin()">Click & Earn</button>
+
+  <div class="links">
+    <h2>Visit Ad Pages</h2>
+    <a href="page1.html">Ad Page 1</a>
+    <a href="page2.html">Ad Page 2</a>
+    <a href="page3.html">Ad Page 3</a>
+    <a href="page4.html">Ad Page 4</a>
+    <a href="page5.html">Ad Page 5</a>
+    <a href="page6.html">Ad Page 6</a>
+    <a href="page7.html">Ad Page 7</a>
+    <a href="page8.html">Ad Page 8</a>
+    <a href="page9.html">Ad Page 9</a>
+    <a href="page10.html">Ad Page 10</a>
+  </div>
+
+  <script>
+    let coins = 0;
+    function addCoin() {
+      coins++;
+      document.getElementById("coins").innerText = coins;
+    }
+  </script>
+</body>
+</html>
